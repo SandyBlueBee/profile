@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Patrick+Hand&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'Patrick Hand', cursive;
+  color: #342744;
+  height: 100vh;
+  width: 100vw;
+  color:  #6E5F64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 95%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 4fr 1fr;
+  gap: 10px
+}
+
+/*mapping */
+.map {
+  grid-row: span 2;
+}
+
+.map-png{
+  background-image: url("images/map.png");
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  position:relative;
+}
+
+.fa-location-pin{
+  font-size: 25px;
+  position: absolute;
+}
+
+#france {
+  top: 125px;
+  left: 455px;
+}
+
+#allemagne {
+  top: 115px;
+  left: 475px;
+}
+
+#usa {
+  top: 145px;
+  left: 215px;
+}
+
+#russie {
+  top: 85px;
+  left: 555px;
+}
+
+#grece {
+  top: 145px;
+  left: 515px;
+}
+
+.finder{
+  padding: 20px 35px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  box-shadow: 2px 2px 5px 3px #6E5F64;
+}
+
+.resize-image{
+  width: 70px !important;
+  height: 70px !important;
+  border: 2px solid #B7A484 !important;
+}
+
+.not-there-card{
+  display: none;
+}
+
+.tyler-location{
+  display: none;
+}
+
+.fa-location-pin:hover {
+  transform-origin: center;
+  transform: scale(1.3, 1.3);
+  color: #ECEEC9;
+}
+
+.not-there:hover + .not-there-card {
+  display: block !important;
+}
+
+.there:hover + .tyler-location {
+  display: block !important;
+}
+
+/*fonts*/
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+button {
+  box-shadow: 2px 2px 5px 3px #6E5F64;
+  padding: 15px 24px;
+  border: none;
+  background-color: #ECEEC9;
+  border-radius: 10px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.medallion {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: 50% top;
+  border-radius: 25%;
+  border: 10px solid #B7A484;
+}
+
+.white-card {
+  background-color: white;
+  box-shadow: 2px 2px 5px 3px #6E5F64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.fa-brands {
+  font-size: 40px;
+}
+
+.fa-brands:hover {
+  color:#B7A484;
+}
